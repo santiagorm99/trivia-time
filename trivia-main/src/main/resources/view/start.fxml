@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.trivia.controller.StartController">
+   <children>
+      <ImageView fitHeight="494.0" fitWidth="785.0" layoutX="-5.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ai-generated-black-silk-drapery-fabric-background-photo.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#e10000" layoutX="215.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textFieldUser" layoutX="145.0" layoutY="100.0" maxWidth="200.0" minWidth="200.0" />
+      <Text fill="#016bf5" layoutX="199.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordFieldPassword" layoutX="146.0" layoutY="200.0" maxWidth="200.0" prefHeight="24.0" prefWidth="200.0" />
+      <Text fx:id="textMessage" fill="#ff001e" layoutX="237.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="1.0" />
+      <Button fx:id="buttonStart" layoutX="192.0" layoutY="270.0" mnemonicParsing="false" onAction="#buttonStartClick" style="-fx-background-color: #03ee2a;" text=" Iniciar sesión" />
+      <Button fx:id="buttonCreate" layoutX="193.0" layoutY="349.0" mnemonicParsing="false" onAction="#buttonCreateClick" style="-fx-background-color: #eaee03;" text="Crear usuario" />
+      <ImageView fitHeight="189.0" fitWidth="153.0" layoutX="363.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/istockphoto-1469754711-612x612.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

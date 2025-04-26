@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.trivia.controller.CreateController">
+   <children>
+      <ImageView fitHeight="534.0" fitWidth="810.0" layoutX="-23.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ai-generated-black-silk-drapery-fabric-background-photo.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#e10000" layoutX="204.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textFieldUser" layoutX="149.0" layoutY="65.0" maxWidth="200.0" promptText="Ingrese usuario" />
+      <Text fill="#016bf5" layoutX="188.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordFieldPassword" layoutX="149.0" layoutY="142.0" maxWidth="200.0" promptText="Ingrese contraseña" />
+      <Text fill="#016bf5" layoutX="153.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repetir contraseña">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordFieldRepeatPassword" layoutX="153.0" layoutY="225.0" maxWidth="200.0" promptText="Repita la contraseña" />
+      <Text fx:id="textMessage" fill="RED" layoutX="220.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="1.0" />
+      <Button fx:id="buttonAccept" layoutX="197.0" layoutY="272.0" mnemonicParsing="false" onAction="#buttonAcceptClick" style="-fx-background-color: #03ee2a;" text="Aceptar" />
+      <Button fx:id="buttonStart" layoutX="180.0" layoutY="346.0" mnemonicParsing="false" onAction="#buttonStartClick" style="-fx-background-color: #8003ee;" text="Iniciar juego" />
+   </children>
+</Pane>
